@@ -35,11 +35,11 @@ button {
     border-radius: 23px;
 }
 
-button:hover {
-    background-color: #b59191;
-    border-radius: 2px;
+/* button:hover {
+    border-radius: 3px;
+    background-color: red;
 
-}
+} */
 
 .textarea-key {
     resize: none;
@@ -123,8 +123,8 @@ button:hover {
 }
 
 .active {
-    border-radius: 3px;
-    background-color: red;
+    border-radius: 50px;
+    background-color: #ab6868;
 }
 
 @media(max-width: 1050px) {
