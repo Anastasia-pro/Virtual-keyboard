@@ -1,0 +1,134 @@
+body {
+    background-color: #e0c8c8c9;
+    font: 16px Verdana;
+    margin: 0;
+}
+
+.textarea-key,
+p,
+.key-container {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+p {
+    max-width: 80%;
+    text-align: center;
+}
+
+button {
+    flex: 1 0;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 0.4vw;
+    padding: 1.6vw 2vw 1.8vw;
+    min-width: 3vw;
+    min-height: 2vw;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    background-color: #d9d0d0;
+    border: none;
+    outline: none;
+    box-shadow: 3px 16px 16px 0px rgba(128, 91, 83, 0.2);
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 23px;
+}
+
+/* button:hover {
+    border-radius: 3px;
+    background-color: red;
+
+} */
+
+.textarea-key {
+    resize: none;
+    width: 86%;
+    height: 250px;
+    background-color: #F4FBFB;
+    border: 6px solid #a69c9c;
+    padding: 30px;
+}
+
+.key-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 5px;
+    background-color: #a69c9c;
+    width: 90%;
+    border-radius: 9px;
+    /* -webkit-box-shadow: -1px 0px 13px 12px rgba(0, 70, 124, 0.19);
+    -moz-box-shadow: -1px 0px 13px 12px rgba(0, 70, 124, 0.19);
+    box-shadow: -1px 0px 13px 12px rgba(0, 70, 124, 0.19); */
+}
+
+.keyboard_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space {
+    flex-grow: 14;
+}
+
+.backspace {
+    flex-grow: 5;
+}
+
+.tab {
+    flex-grow: 4;
+}
+
+.capslock {
+    flex-grow: 5;
+}
+
+.enter {
+    flex-grow: 5;
+}
+
+.shift {
+    flex-grow: 6;
+}
+
+.tab,
+.backspace,
+.del,
+.shift,
+.capslock,
+.enter,
+.space,
+.ctrl,
+.opt,
+.cmd {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-transform: lowercase;
+    letter-spacing: 0.05vw;
+}
+
+.arrow.arrow_down,
+.arrow.arrow_left,
+.arrow.arrow_right {
+    flex-grow: 0.5;
+}
+
+.tab,
+.capslock,
+.backspace,
+.shift.shift_left,
+.ctrl.ctrl_left {
+    text-align: left;
+}
+
+.active {
+    border-radius: 50px;
+    background-color: #ab6868;
+}
+
+@media(max-width: 1050px) {
+    .textarea-key {
+        width: 85%;
+    }
+}
